@@ -1,0 +1,160 @@
+/* 
+============ global ============
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red;
+    box-sizing: border-box; */
+}
+  
+li {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* .button {
+    background-color: #FF713B - #FFA51D;
+} */
+
+/* 
+============ typography ============
+*/
+
+body {
+    font-size: 1rem;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #404040;
+    background-color: black;
+}
+  
+.large-h1 {
+    font-size: 3.5rem;
+}
+  
+.large-h2 {
+    font-size: 1.75rem;
+}
+  
+.small-h1 {
+    font-size: 1.55rem;
+}
+
+.small-h2 {
+    font-size: 1rem;
+}
+
+.large-p {
+    font-size: 1.125rem;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.small-p {
+    font-size: 0.625rem;
+}
+  
+.capitalize {
+    text-transform: capitalize;
+}
+  
+.uppercase {
+    text-transform: uppercase;
+}
+  
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+.main-sub-title {
+    color: #F18119;
+}
+
+/* 
+============ title container ============
+*/
+
+.background-img {
+    background-image: url(./img/taco.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+}
+
+.background-img::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: .6;
+}
+
+.title-container {
+    justify-content: space-between;
+    gap: 5em;
+    color: #fff;
+}
+
+.company-name {
+    order: -1;
+    border-top: .5em solid #09ff00;
+    color: #09ff00;
+    padding-top: .3em;
+}
+
+.title {
+    line-height: .9em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.title-text {
+    padding: 1em 0;
+    color: #ff2600;
+}
+
+/* 
+============ main container ============
+*/
+
+.main-container {
+    background-color: #fff;
+    padding: 3em 1em;
+}
+
+.main-title {
+    line-height: 1em;
+}
+
+.main-sub-title {
+    padding: 0 0 1em 0;
+    line-height: 1.6;
+}
+
+.fine-print {
+    width: 150px;
+    margin-top: 1em;
+}
