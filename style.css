@@ -5,8 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red;
-    box-sizing: border-box; */
+    /* border: 1px solid red; */
 }
   
 li {
@@ -74,7 +73,7 @@ h2 {
 }
 
 .main-sub-title {
-    color: #F18119;
+    color: #09ff00c7;
 }
 
 /* 
@@ -102,12 +101,13 @@ h2 {
     justify-content: space-between;
     gap: 5em;
     color: #fff;
-    height: 50vh;
+    height: 55vh;
 }
 
 .slogan {
     order: -1;
     border-top: .5em solid #09ff00;
+    border-image: linear-gradient(to right, #09ff00, #ff2600) 1;
     color: #09ff00;
     padding-top: .3em;
 }
@@ -138,23 +138,64 @@ h2 {
 }
 
 .main-sub-title {
-    padding: 0 0 1em 0;
+    margin-bottom: .5em;
     line-height: 1.6;
+    color: linear-gradient(to right, #09ff00, #ff2600);
 }
 
 .fine-print {
     width: 150px;
-    margin-top: 1em;
+    margin-top: 1em 0;
+}
+
+.webinar-form {
+    margin: 1em 0;
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
+    text-align: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .25em;
+    border: 0;
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.625rem;
+    padding: .9em;
+    letter-spacing: 1px;
+}
+
+.button-background-color {
+    background: linear-gradient(145deg, green, red);
+}
+
+button:hover,
+button:focus {
+    opacity: .7;
 }
 
 /* 
 ============ media query ============
 */
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     h2 {
@@ -170,9 +211,19 @@ h2 {
         width: 60%;
         min-height: 100vh;
     }
+
+    .title {
+        max-width: 600px;
+    }
     
     .main-container {
         width: 40%;
+        margin: initial;
+        justify-content: center;
+    }
+
+    .main-text {
+        max-width: 500px;
     }
 
 }
